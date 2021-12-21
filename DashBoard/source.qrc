@@ -1,0 +1,40 @@
+<RCC>
+  <qresource prefix="NotificationPanel">
+    <file>icons/BusIcon.png</file>
+    <file>icons/ParkingMuteIcon.png</file>
+    <file>icons/ParkingSpeakerIcon.png</file>
+    <file>icons/RGBIcon.png</file>
+    <file>icons/ColorPickerIcon.png</file>
+    <file>icons/FireHydrantIcon.png</file>
+    <file>icons/MapsIcon.png</file>
+    <file>icons/SettingsIcon.png</file>
+    <file>icons/CameraBGIcon.png</file>
+    <file>icons/CallAcceptIcon.png</file>
+    <file>icons/CallRejectIcon.png</file>
+    <file>icons/PhoneIcon.png</file>
+    <file>icons/AuxIcon.png</file>
+    <file>icons/PauseSongIcon.png</file>
+    <file>icons/NextSongButton.png</file>
+    <file>icons/PlayButton.png</file>
+    <file>icons/PlayerIcon.png</file>
+    <file>icons/PreviousSongButton.png</file>
+    <file>icons/ReloadUSBButton.png</file>
+    <file>icons/TuneFMIcon.png</file>
+    <file>icons/StationFMIcon.png</file>
+    <file>icons/AuxTabIcon.png</file>
+    <file>icons/BandFMIcon.png</file>
+    <file>icons/BTTabIcon.png</file>
+    <file>icons/FMTabIcon.png</file>
+    <file>icons/USBTabIcon.png</file>
+    <file>icons/CameraTabIcon.png</file>
+    <file>icons/MusicTabIcon.png</file>
+    <file>icons/ParkingTabIcon.png</file>
+    <file>icons/PhoneTabIcon.png</file>
+    <file>icons/StatusTabIcon.png</file>
+    <file>icons/FMBackwardButton.png</file>
+    <file>icons/FMForwardButton.png</file>
+    <file>icons/BTOnIcon.png</file>
+    <file>icons/NetworkEnableIcon.png</file>
+    <file>icons/CloudEnableIcon.png</file>
+  </qresource>
+</RCC>

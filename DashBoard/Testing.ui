@@ -1,0 +1,2898 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1280</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1280</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(17,17,17);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="NotificationPanel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1280</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: transparent;
+border-bottom:2px solid rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="TimeLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>16</y>
+      <width>160</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-family: Plus Jakarta Sans;
+color: rgb(255, 255, 255);
+font-style: normal;
+font-weight: 500;
+font-size: 30px;</string>
+    </property>
+    <property name="text">
+     <string>10:20 AM</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="CloudEnableIcon">
+    <property name="geometry">
+     <rect>
+      <x>165</x>
+      <y>15</y>
+      <width>40</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="source.qrc">:/NotificationPanel/icons/CloudEnableIcon.png</pixmap>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="TemperatureLabel">
+    <property name="geometry">
+     <rect>
+      <x>1180</x>
+      <y>16</y>
+      <width>90</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-family: Plus Jakarta Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;25°C&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="FuelBoxLabel">
+    <property name="geometry">
+     <rect>
+      <x>1086</x>
+      <y>15</y>
+      <width>66</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 4px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="FuelBar1">
+    <property name="geometry">
+     <rect>
+      <x>1088</x>
+      <y>18</y>
+      <width>7</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 255, 0);
+border-radius: 2px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="FuelBar2">
+    <property name="geometry">
+     <rect>
+      <x>1097</x>
+      <y>18</y>
+      <width>7</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 255, 0);
+border-radius: 2px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="FuelBar3">
+    <property name="geometry">
+     <rect>
+      <x>1106</x>
+      <y>18</y>
+      <width>7</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 255, 0);
+border-radius: 2px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="FuelBar4">
+    <property name="geometry">
+     <rect>
+      <x>1115</x>
+      <y>18</y>
+      <width>7</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 255, 0);
+border-radius: 2px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="FuelBar5">
+    <property name="geometry">
+     <rect>
+      <x>1124</x>
+      <y>18</y>
+      <width>7</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 255, 0);
+border-radius: 2px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="FuelBar6">
+    <property name="geometry">
+     <rect>
+      <x>1133</x>
+      <y>18</y>
+      <width>7</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 255, 0);
+border-radius: 2px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="FuelBar7">
+    <property name="geometry">
+     <rect>
+      <x>1142</x>
+      <y>18</y>
+      <width>7</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 255, 0);
+border-radius: 2px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="NetworkEnableIcon">
+    <property name="geometry">
+     <rect>
+      <x>1022</x>
+      <y>15</y>
+      <width>40</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="source.qrc">:/NotificationPanel/icons/NetworkEnableIcon.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="BTOnIcon">
+    <property name="geometry">
+     <rect>
+      <x>962</x>
+      <y>15</y>
+      <width>40</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="source.qrc">:/NotificationPanel/icons/BTOnIcon.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="MainMenu">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>70</y>
+      <width>1280</width>
+      <height>650</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>130</width>
+      <height>130</height>
+     </size>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::DefaultContextMenu</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTabBar::tab:selected {
+background-color: rgb(144, 216, 255);
+
+}
+QTabBar::tab{
+background-color: rgb(255, 255, 255);
+padding:24px 0 0 0;
+}</string>
+    </property>
+    <property name="tabPosition">
+     <enum>QTabWidget::East</enum>
+    </property>
+    <property name="tabShape">
+     <enum>QTabWidget::Rounded</enum>
+    </property>
+    <property name="currentIndex">
+     <number>4</number>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>90</width>
+      <height>130</height>
+     </size>
+    </property>
+    <property name="elideMode">
+     <enum>Qt::ElideMiddle</enum>
+    </property>
+    <property name="tabsClosable">
+     <bool>false</bool>
+    </property>
+    <widget class="QWidget" name="MusicTab">
+     <attribute name="icon">
+      <iconset resource="source.qrc">
+       <normaloff>:/NotificationPanel/icons/MusicTabIcon.png</normaloff>:/NotificationPanel/icons/MusicTabIcon.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string/>
+     </attribute>
+     <widget class="QTabWidget" name="MusicMenu">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1150</width>
+        <height>650</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTabBar::tab:selected {
+background-color: rgb(255, 255, 255);
+
+}
+QTabBar::tab{
+background-color: rgb(144, 216, 255);
+padding:0 0 30px 0;
+}</string>
+      </property>
+      <property name="tabPosition">
+       <enum>QTabWidget::West</enum>
+      </property>
+      <property name="currentIndex">
+       <number>3</number>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>84</width>
+        <height>130</height>
+       </size>
+      </property>
+      <widget class="QWidget" name="FMTab">
+       <attribute name="icon">
+        <iconset resource="source.qrc">
+         <normaloff>:/NotificationPanel/icons/FMTabIcon.png</normaloff>:/NotificationPanel/icons/FMTabIcon.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string/>
+       </attribute>
+       <widget class="QLabel" name="ChannelFrequencyLabel">
+        <property name="geometry">
+         <rect>
+          <x>393</x>
+          <y>136</y>
+          <width>165</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+font-family: Plus Jakarta Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 72px;
+line-height: 91px;</string>
+        </property>
+        <property name="text">
+         <string>93.5</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="MegaHertzLabel">
+        <property name="geometry">
+         <rect>
+          <x>560</x>
+          <y>150</y>
+          <width>90</width>
+          <height>90</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+font-family: Plus Jakarta Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 91px;</string>
+        </property>
+        <property name="text">
+         <string>MHz</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="FMForwardButton">
+        <property name="geometry">
+         <rect>
+          <x>843</x>
+          <y>136</y>
+          <width>90</width>
+          <height>110</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="source.qrc">
+          <normaloff>:/NotificationPanel/icons/FMForwardButton.png</normaloff>:/NotificationPanel/icons/FMForwardButton.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>71</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="FMBackwardButton">
+        <property name="geometry">
+         <rect>
+          <x>137</x>
+          <y>136</y>
+          <width>90</width>
+          <height>110</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="source.qrc">
+          <normaloff>:/NotificationPanel/icons/FMBackwardButton.png</normaloff>:/NotificationPanel/icons/FMBackwardButton.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>71</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Channel1Button">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>320</y>
+          <width>140</width>
+          <height>140</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:1px solid rgb(255, 255, 255);
+color: rgb(255, 255, 255);
+font-family: Plus Jakarta Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 48px;
+line-height: 60px;</string>
+        </property>
+        <property name="text">
+         <string>1</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Channel2Button">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>320</y>
+          <width>140</width>
+          <height>140</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:1px solid rgb(255, 255, 255);
+color: rgb(255, 255, 255);
+font-family: Plus Jakarta Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 48px;
+line-height: 60px;</string>
+        </property>
+        <property name="text">
+         <string>2</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Channel3Button">
+        <property name="geometry">
+         <rect>
+          <x>440</x>
+          <y>320</y>
+          <width>140</width>
+          <height>140</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:1px solid rgb(255, 255, 255);
+color: rgb(255, 255, 255);
+font-family: Plus Jakarta Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 48px;
+line-height: 60px;</string>
+        </property>
+        <property name="text">
+         <string>3</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Channel4Button">
+        <property name="geometry">
+         <rect>
+          <x>610</x>
+          <y>320</y>
+          <width>140</width>
+          <height>140</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:1px solid rgb(255, 255, 255);
+color: rgb(255, 255, 255);
+font-family: Plus Jakarta Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 48px;
+line-height: 60px;</string>
+        </property>
+        <property name="text">
+         <string>4</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Channel5Button">
+        <property name="geometry">
+         <rect>
+          <x>780</x>
+          <y>320</y>
+          <width>140</width>
+          <height>140</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:1px solid rgb(255, 255, 255);
+color: rgb(255, 255, 255);
+font-family: Plus Jakarta Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 48px;
+line-height: 60px;</string>
+        </property>
+        <property name="text">
+         <string>5</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="FMControlPanelBox">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>550</y>
+          <width>1020</width>
+          <height>100</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-top:1px solid rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="BandFMButton">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>552</y>
+          <width>120</width>
+          <height>100</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="source.qrc">
+          <normaloff>:/NotificationPanel/icons/BandFMIcon.png</normaloff>:/NotificationPanel/icons/BandFMIcon.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>46</width>
+          <height>51</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="Line" name="FMcontrolLine1">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>575</y>
+          <width>1</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="BandFMStationButton">
+        <property name="geometry">
+         <rect>
+          <x>451</x>
+          <y>552</y>
+          <width>118</width>
+          <height>100</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="source.qrc">
+          <normaloff>:/NotificationPanel/icons/StationFMIcon.png</normaloff>:/NotificationPanel/icons/StationFMIcon.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>63</width>
+          <height>47</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="Line" name="FMControlLine2">
+        <property name="geometry">
+         <rect>
+          <x>570</x>
+          <y>575</y>
+          <width>1</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="TuneFMButton">
+        <property name="geometry">
+         <rect>
+          <x>571</x>
+          <y>552</y>
+          <width>120</width>
+          <height>100</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="source.qrc">
+          <normaloff>:/NotificationPanel/icons/TuneFMIcon.png</normaloff>:/NotificationPanel/icons/TuneFMIcon.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>41</width>
+          <height>47</height>
+         </size>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="BTTab">
+       <attribute name="icon">
+        <iconset resource="source.qrc">
+         <normaloff>:/NotificationPanel/icons/BTTabIcon.png</normaloff>:/NotificationPanel/icons/BTTabIcon.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string/>
+       </attribute>
+       <widget class="QLabel" name="BTControlPanelBox">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>550</y>
+          <width>1020</width>
+          <height>100</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-top:1px solid rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="PreviousSongBTButton">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>552</y>
+          <width>100</width>
+          <height>100</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="source.qrc">
+          <normaloff>:/NotificationPanel/icons/PreviousSongButton.png</normaloff>:/NotificationPanel/icons/PreviousSongButton.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="Line" name="BTcontrolLine1">
+        <property name="geometry">
+         <rect>
+          <x>461</x>
+          <y>575</y>
+          <width>1</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="PlaySongBTButton">
+        <property name="geometry">
+         <rect>
+          <x>462</x>
+          <y>552</y>
+          <width>98</width>
+          <height>100</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="source.qrc">
+          <normaloff>:/NotificationPanel/icons/PauseSongIcon.png</normaloff>:/NotificationPanel/icons/PauseSongIcon.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="Line" name="BTcontrolLine2">
+        <property name="geometry">
+         <rect>
+          <x>560</x>
+          <y>575</y>
+          <width>1</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="NextSongBTButton">
+        <property name="geometry">
+         <rect>
+          <x>561</x>
+          <y>552</y>
+          <width>100</width>
+          <height>100</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="source.qrc">
+          <normaloff>:/NotificationPanel/icons/NextSongButton.png</normaloff>:/NotificationPanel/icons/NextSongButton.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QLabel" name="PlayerIconBT">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>65</y>
+          <width>200</width>
+          <height>200</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="source.qrc">:/NotificationPanel/icons/PlayerIcon.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="SongNameBTLabel">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>310</y>
+          <width>500</width>
+          <height>45</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+font-family: Plus Jakarta Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 45px;
+text-align: center;</string>
+        </property>
+        <property name="text">
+         <string>Sakhiyan 2.0-Bell Bottom 2021</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="AlbumNameBTLabel">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>365</y>
+          <width>500</width>
+          <height>45</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+font-family: Plus Jakarta Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 45px;
+text-align: center;</string>
+        </property>
+        <property name="text">
+         <string>Saregama Music</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="ArtistNameBTLabel">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>420</y>
+          <width>500</width>
+          <height>45</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+font-family: Plus Jakarta Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 45px;
+text-align: center;</string>
+        </property>
+        <property name="text">
+         <string>Arijit Singh &amp; Pritam</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="USBTab">
+       <attribute name="icon">
+        <iconset resource="source.qrc">
+         <normaloff>:/NotificationPanel/icons/USBTabIcon.png</normaloff>:/NotificationPanel/icons/USBTabIcon.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string/>
+       </attribute>
+       <widget class="QPushButton" name="ReloadUSBButton">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>400</width>
+          <height>60</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+border:2px solid rgb(144,216,255);
+font-family: Plus Jakarta Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 23px;
+</string>
+        </property>
+        <property name="text">
+         <string>  Reload Songs</string>
+        </property>
+        <property name="icon">
+         <iconset resource="source.qrc">
+          <normaloff>:/NotificationPanel/icons/ReloadUSBButton.png</normaloff>:/NotificationPanel/icons/ReloadUSBButton.png</iconset>
+        </property>
+       </widget>
+       <widget class="QListWidget" name="SongListBox">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>60</y>
+          <width>400</width>
+          <height>491</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-family: Plus Jakarta Sans;
+color: rgb(255, 255, 255);
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 23px;
+border:1px solid rgb(255, 255, 255);</string>
+        </property>
+        <property name="textElideMode">
+         <enum>Qt::ElideLeft</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="USBControlPanelBox">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>550</y>
+          <width>1020</width>
+          <height>100</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-top:1px solid rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="PlayerIcon">
+        <property name="geometry">
+         <rect>
+          <x>610</x>
+          <y>70</y>
+          <width>200</width>
+          <height>200</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="source.qrc">:/NotificationPanel/icons/PlayerIcon.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="SongNameUSBLabel">
+        <property name="geometry">
+         <rect>
+          <x>485</x>
+          <y>305</y>
+          <width>450</width>
+          <height>45</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+font-family: Plus Jakarta Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 45px;
+text-align: center;</string>
+        </property>
+        <property name="text">
+         <string>Sakhiyan 2.0-Bell Bottom 2021</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QProgressBar" name="ProgressBarUSB">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>430</y>
+          <width>320</width>
+          <height>5</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QProgressBar::chunk {
+    background-color: rgb(144,216,255);
+}</string>
+        </property>
+        <property name="value">
+         <number>24</number>
+        </property>
+        <property name="textVisible">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="SongCurrentTimeLabel">
+        <property name="geometry">
+         <rect>
+          <x>470</x>
+          <y>420</y>
+          <width>60</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-family: Plus Jakarta Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 23px;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>00:00</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="SongTotalTimeLabel">
+        <property name="geometry">
+         <rect>
+          <x>890</x>
+          <y>420</y>
+          <width>60</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-family: Plus Jakarta Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 23px;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>00:00</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="PreviousSongUSBButton">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>552</y>
+          <width>100</width>
+          <height>100</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="source.qrc">
+          <normaloff>:/NotificationPanel/icons/PreviousSongButton.png</normaloff>:/NotificationPanel/icons/PreviousSongButton.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="Line" name="USBcontrolLine1">
+        <property name="geometry">
+         <rect>
+          <x>461</x>
+          <y>575</y>
+          <width>1</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="PlaySongUSBButton">
+        <property name="geometry">
+         <rect>
+          <x>462</x>
+          <y>552</y>
+          <width>98</width>
+          <height>100</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="source.qrc">
+          <normaloff>:/NotificationPanel/icons/PlayButton.png</normaloff>:/NotificationPanel/icons/PlayButton.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="Line" name="USBcontrolLine2">
+        <property name="geometry">
+         <rect>
+          <x>560</x>
+          <y>575</y>
+          <width>1</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="NextSongUSBButton">
+        <property name="geometry">
+         <rect>
+          <x>561</x>
+          <y>552</y>
+          <width>100</width>
+          <height>100</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="source.qrc">
+          <normaloff>:/NotificationPanel/icons/NextSongButton.png</normaloff>:/NotificationPanel/icons/NextSongButton.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="AuxTab">
+       <attribute name="icon">
+        <iconset resource="source.qrc">
+         <normaloff>:/NotificationPanel/icons/AuxTabIcon.png</normaloff>:/NotificationPanel/icons/AuxTabIcon.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string/>
+       </attribute>
+       <widget class="QRadioButton" name="AUXONButton">
+        <property name="geometry">
+         <rect>
+          <x>510</x>
+          <y>200</y>
+          <width>200</width>
+          <height>100</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-family: Plus Jakarta Sans;
+color: rgb(255, 255, 255);
+font-style: normal;
+font-weight: bold;
+font-size: 96px;
+line-height: 121px;
+</string>
+        </property>
+        <property name="text">
+         <string>ON</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>80</width>
+          <height>80</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="AUXOFFButton">
+        <property name="geometry">
+         <rect>
+          <x>510</x>
+          <y>340</y>
+          <width>230</width>
+          <height>100</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-family: Plus Jakarta Sans;
+color: rgb(255, 255, 255);
+font-style: normal;
+font-weight: bold;
+font-size: 96px;
+line-height: 121px;</string>
+        </property>
+        <property name="text">
+         <string>OFF</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>80</width>
+          <height>80</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QLabel" name="AUXIcon">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>100</y>
+          <width>350</width>
+          <height>400</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="source.qrc">:/NotificationPanel/icons/AuxIcon.png</pixmap>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="PhoneTab">
+     <attribute name="icon">
+      <iconset resource="source.qrc">
+       <normaloff>:/NotificationPanel/icons/PhoneTabIcon.png</normaloff>:/NotificationPanel/icons/PhoneTabIcon.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string/>
+     </attribute>
+     <widget class="QLabel" name="Person1Button">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>75</y>
+        <width>300</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: Plus Jakarta Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 30px;
+border-radius:5px;
+color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Person 1</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Person2Button">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>185</y>
+        <width>300</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: Plus Jakarta Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 30px;
+border-radius:5px;
+color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Person 2</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Person3Button">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>295</y>
+        <width>300</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: Plus Jakarta Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 30px;
+border-radius:5px;
+color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Person 3</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Person4Button">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>405</y>
+        <width>300</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: Plus Jakarta Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 30px;
+border-radius:5px;
+color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Person 4</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Person5Button">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>515</y>
+        <width>300</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: Plus Jakarta Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 30px;
+border-radius:5px;
+color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Person 5</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="Line" name="PhoneTabLine">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>0</y>
+        <width>2</width>
+        <height>650</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="PhoneBGImage">
+      <property name="geometry">
+       <rect>
+        <x>575</x>
+        <y>125</y>
+        <width>400</width>
+        <height>400</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="source.qrc">:/NotificationPanel/icons/PhoneIcon.png</pixmap>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="CameraTab">
+     <attribute name="icon">
+      <iconset resource="source.qrc">
+       <normaloff>:/NotificationPanel/icons/CameraTabIcon.png</normaloff>:/NotificationPanel/icons/CameraTabIcon.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string/>
+     </attribute>
+     <widget class="QLabel" name="CameraMenuBox">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>130</width>
+        <height>650</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(144, 216, 255);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="GalleryViewButton">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>15</y>
+        <width>100</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: transparent;
+color: rgb(0, 0, 0);
+border: 2px solid rgb(0, 0, 0);
+border-radius:5px;
+font-family: Plus Jakarta Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 18px;
+text-align: center;
+text-transform: capitalize;
+
+
+
+  
+</string>
+      </property>
+      <property name="text">
+       <string>Gallery
+View</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BackCameraButton">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>145</y>
+        <width>100</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: transparent;
+color: rgb(0, 0, 0);
+border: 2px solid rgb(0, 0, 0);
+border-radius:5px;
+font-family: Plus Jakarta Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 18px;
+text-align: center;
+text-transform: capitalize;</string>
+      </property>
+      <property name="text">
+       <string>Back
+Camera</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="FrontCameraButton">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>275</y>
+        <width>100</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: transparent;
+color: rgb(0, 0, 0);
+border: 2px solid rgb(0, 0, 0);
+border-radius:5px;
+font-family: Plus Jakarta Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 18px;
+text-align: center;
+text-transform: capitalize;</string>
+      </property>
+      <property name="text">
+       <string>Front
+Camera</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Camera1Button">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>405</y>
+        <width>100</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: transparent;
+color: rgb(0, 0, 0);
+border: 2px solid rgb(0, 0, 0);
+border-radius:5px;
+font-family: Plus Jakarta Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 18px;
+text-align: center;
+text-transform: capitalize;</string>
+      </property>
+      <property name="text">
+       <string>Camera-1</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Camera2Button">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>535</y>
+        <width>100</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: transparent;
+color: rgb(0, 0, 0);
+border: 2px solid rgb(0, 0, 0);
+border-radius:5px;
+font-family: Plus Jakarta Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 18px;
+text-align: center;
+text-transform: capitalize;</string>
+      </property>
+      <property name="text">
+       <string>Camera-2</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="BackCameraView">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>0</y>
+        <width>510</width>
+        <height>325</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+border:1px solid rgb(255,255,255);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="source.qrc">:/NotificationPanel/icons/CameraBGIcon.png</pixmap>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="FrontCameraView">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>0</y>
+        <width>510</width>
+        <height>325</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+border:1px solid rgb(255,255,255);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="source.qrc">:/NotificationPanel/icons/CameraBGIcon.png</pixmap>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Camera1View">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>325</y>
+        <width>510</width>
+        <height>325</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+border:1px solid rgb(255,255,255);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="source.qrc">:/NotificationPanel/icons/CameraBGIcon.png</pixmap>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Camera2View">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>325</y>
+        <width>510</width>
+        <height>325</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+border:1px solid rgb(255,255,255);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="source.qrc">:/NotificationPanel/icons/CameraBGIcon.png</pixmap>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="StatusTab">
+     <attribute name="icon">
+      <iconset resource="source.qrc">
+       <normaloff>:/NotificationPanel/icons/StatusTabIcon.png</normaloff>:/NotificationPanel/icons/StatusTabIcon.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string/>
+     </attribute>
+     <widget class="QTabWidget" name="StatusMenu">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1150</width>
+        <height>650</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTabBar::tab:selected {
+background-color: rgb(255, 255, 255);
+
+}
+QTabBar::tab{
+background-color: rgb(144, 216, 255);
+padding:0 0 30px 0;
+}</string>
+      </property>
+      <property name="tabPosition">
+       <enum>QTabWidget::West</enum>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>84</width>
+        <height>130</height>
+       </size>
+      </property>
+      <widget class="QWidget" name="ColorPickerTab">
+       <attribute name="icon">
+        <iconset resource="source.qrc">
+         <normaloff>:/NotificationPanel/icons/ColorPickerIcon.png</normaloff>:/NotificationPanel/icons/ColorPickerIcon.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string/>
+       </attribute>
+       <widget class="QPushButton" name="RGB1Button">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>60</y>
+          <width>200</width>
+          <height>200</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-color:rbg(17,17,17);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="source.qrc">
+          <normaloff>:/NotificationPanel/icons/RGBIcon.png</normaloff>:/NotificationPanel/icons/RGBIcon.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>200</width>
+          <height>200</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QLabel" name="RGB1Label">
+        <property name="geometry">
+         <rect>
+          <x>161</x>
+          <y>270</y>
+          <width>80</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+font-family: Plus Jakarta Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 30px;
+text-align: center;</string>
+        </property>
+        <property name="text">
+         <string>RGB-1</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="RGB2Button">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>60</y>
+          <width>200</width>
+          <height>200</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-color:rbg(17,17,17);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="source.qrc">
+          <normaloff>:/NotificationPanel/icons/RGBIcon.png</normaloff>:/NotificationPanel/icons/RGBIcon.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>200</width>
+          <height>200</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QLabel" name="RGB2Label">
+        <property name="geometry">
+         <rect>
+          <x>461</x>
+          <y>270</y>
+          <width>80</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+font-family: Plus Jakarta Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 30px;
+text-align: center;</string>
+        </property>
+        <property name="text">
+         <string>RGB-2</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="RGB3Button">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>350</y>
+          <width>200</width>
+          <height>200</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-color: rgb(17,17,17);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="source.qrc">
+          <normaloff>:/NotificationPanel/icons/RGBIcon.png</normaloff>:/NotificationPanel/icons/RGBIcon.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>200</width>
+          <height>200</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QLabel" name="RGB3Label">
+        <property name="geometry">
+         <rect>
+          <x>161</x>
+          <y>560</y>
+          <width>80</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+font-family: Plus Jakarta Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 30px;
+text-align: center;</string>
+        </property>
+        <property name="text">
+         <string>RGB-3</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="RGB4Button">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>350</y>
+          <width>200</width>
+          <height>200</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-color: rgb(17,17,17);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="source.qrc">
+          <normaloff>:/NotificationPanel/icons/RGBIcon.png</normaloff>:/NotificationPanel/icons/RGBIcon.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>200</width>
+          <height>200</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QLabel" name="RGB4Label">
+        <property name="geometry">
+         <rect>
+          <x>461</x>
+          <y>560</y>
+          <width>80</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+font-family: Plus Jakarta Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 30px;
+text-align: center;</string>
+        </property>
+        <property name="text">
+         <string>RGB-4</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="Dimmer1Label">
+        <property name="geometry">
+         <rect>
+          <x>690</x>
+          <y>560</y>
+          <width>105</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+font-family: Plus Jakarta Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 30px;
+text-align: center;</string>
+        </property>
+        <property name="text">
+         <string>Dimmer 1</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="Dimmer2Label">
+        <property name="geometry">
+         <rect>
+          <x>828</x>
+          <y>560</y>
+          <width>109</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+font-family: Plus Jakarta Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 30px;
+text-align: center;</string>
+        </property>
+        <property name="text">
+         <string>Dimmer 2</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QSlider" name="VerticalSliderDimmer1">
+        <property name="geometry">
+         <rect>
+          <x>722</x>
+          <y>65</y>
+          <width>40</width>
+          <height>485</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QSlider::groove:vertical {
+    border: 1px solid white;
+	border-radius:10px;
+    }
+QSlider::handle:vertical {
+	border: 1px solid black;
+	border-radius: 10px;
+    background-color: blue;
+    height: 40px;
+    width: 40px;
+    }
+</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="tickPosition">
+         <enum>QSlider::NoTicks</enum>
+        </property>
+       </widget>
+       <widget class="QSlider" name="VerticalSliderDimmer2">
+        <property name="geometry">
+         <rect>
+          <x>862</x>
+          <y>65</y>
+          <width>40</width>
+          <height>485</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QSlider::groove:vertical {
+    border: 1px solid white;
+	border-radius:10px;
+    }
+QSlider::handle:vertical {
+	border: 1px solid black;
+	border-radius: 10px;
+    background-color: blue;
+    height: 40px;
+    width: 40px;
+    }</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="tickPosition">
+         <enum>QSlider::NoTicks</enum>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="FireHydrantTab">
+       <attribute name="icon">
+        <iconset resource="source.qrc">
+         <normaloff>:/NotificationPanel/icons/FireHydrantIcon.png</normaloff>:/NotificationPanel/icons/FireHydrantIcon.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string/>
+       </attribute>
+       <widget class="QLabel" name="FireHydrantWeight">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>120</y>
+          <width>340</width>
+          <height>340</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+font-family: Plus Jakarta Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 288px;
+line-height: 363px;
+/* identical to box height */
+
+text-align: center;</string>
+        </property>
+        <property name="text">
+         <string>69</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="KgWeightLabel">
+        <property name="geometry">
+         <rect>
+          <x>590</x>
+          <y>320</y>
+          <width>174</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+font-family: Plus Jakarta Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 96px;
+line-height: 121px;
+/* identical to box height */
+
+text-align: center;</string>
+        </property>
+        <property name="text">
+         <string>kgs</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="MapsTab">
+       <attribute name="icon">
+        <iconset resource="source.qrc">
+         <normaloff>:/NotificationPanel/icons/MapsIcon.png</normaloff>:/NotificationPanel/icons/MapsIcon.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string/>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="SettingsTab">
+       <attribute name="icon">
+        <iconset resource="source.qrc">
+         <normaloff>:/NotificationPanel/icons/SettingsIcon.png</normaloff>:/NotificationPanel/icons/SettingsIcon.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string/>
+       </attribute>
+       <widget class="QLabel" name="LoginLabel">
+        <property name="geometry">
+         <rect>
+          <x>432</x>
+          <y>115</y>
+          <width>155</width>
+          <height>43</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-family: Plus Jakarta Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 48px;
+line-height: 90%;
+/* or 32px */
+
+text-align: center;
+text-transform: uppercase;
+
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>LOGIN</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="UserNameInput">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>225</y>
+          <width>500</width>
+          <height>60</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border: 2px solid rgb(255, 255, 255);;
+box-sizing: border-box;
+border-radius: 10px;</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="UserNameLabel">
+        <property name="geometry">
+         <rect>
+          <x>267</x>
+          <y>198</y>
+          <width>117</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+font-family: Plus Jakarta Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 90%;
+/* or 16px */
+
+
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Username</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="PasswordLabel">
+        <property name="geometry">
+         <rect>
+          <x>267</x>
+          <y>300</y>
+          <width>113</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+font-family: Plus Jakarta Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 90%;
+/* or 16px */
+
+
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Password</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="PasswordInput">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>325</y>
+          <width>500</width>
+          <height>60</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border: 2px solid rgb(255, 255, 255);;
+box-sizing: border-box;
+border-radius: 10px;</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="LoginButton">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>402</y>
+          <width>500</width>
+          <height>60</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);
+
+border-radius: 10px;
+font-family: Plus Jakarta Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 90%;</string>
+        </property>
+        <property name="text">
+         <string>LOGIN</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="ParkingTab">
+     <attribute name="icon">
+      <iconset resource="source.qrc">
+       <normaloff>:/NotificationPanel/icons/ParkingTabIcon.png</normaloff>:/NotificationPanel/icons/ParkingTabIcon.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string/>
+     </attribute>
+     <widget class="QLabel" name="SoundButtonParking">
+      <property name="geometry">
+       <rect>
+        <x>33</x>
+        <y>533</y>
+        <width>80</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="source.qrc">:/NotificationPanel/icons/ParkingSpeakerIcon.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="BusIcon">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>190</y>
+        <width>583</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="source.qrc">:/NotificationPanel/icons/BusIcon.png</pixmap>
+      </property>
+     </widget>
+     <widget class="Line" name="Sensor1Line6">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>120</y>
+        <width>70</width>
+        <height>70</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: transparent;
+border-top-right-radius:63px;
+border-top:5px solid  rgb(255,255,179);
+border-right:5px solid  rgb(255,255,179);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="Sensor1Line5">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>130</y>
+        <width>60</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: transparent;
+border-top-right-radius:54px;
+border-top:5px solid  rgb(255,255,179);
+border-right:5px solid rgb(255,255,179);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="Sensor1Line4">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>140</y>
+        <width>50</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: transparent;
+border-top-right-radius:45px;
+border-top:5px solid rgb(255,215,179);
+border-right:5px solid rgb(255,215,179);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="Sensor1Line3">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>150</y>
+        <width>40</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: transparent;
+border-top-right-radius:36px;
+border-top:5px solid rgb(255,215,179);
+border-right:5px solid rgb(255,215,179);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="Sensor1Line2">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>160</y>
+        <width>30</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: transparent;
+border-top-right-radius:27px;
+border-top:5px solid rgb(255,150,150);
+border-right:5px solid  rgb(255,150,150);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="Sensor1Line1">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>170</y>
+        <width>20</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: transparent;
+border-top-right-radius:18px;
+border-top:5px solid rgb(255,150,150);
+border-right:5px solid rgb(255,150,150);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="Sensor4Line6">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>360</y>
+        <width>70</width>
+        <height>70</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: transparent;
+border-bottom-right-radius:63px;
+border-bottom:5px solid  rgb(255,255,179);
+border-right:5px solid  rgb(255,255,179);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="Sensor4Line5">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>360</y>
+        <width>60</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: transparent;
+border-bottom-right-radius:54px;
+border-bottom:5px solid  rgb(255,255,179);
+border-right:5px solid  rgb(255,255,179);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="Sensor4Line4">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>360</y>
+        <width>50</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: transparent;
+border-bottom-right-radius:45px;
+border-bottom:5px solid rgb(255,215,179);
+border-right:5px solid rgb(255,215,179);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="Sensor4Line3">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>360</y>
+        <width>40</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: transparent;
+border-bottom-right-radius:36px;
+border-bottom:5px solid rgb(255,215,179);
+border-right:5px solid rgb(255,215,179);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="Sensor4Line2">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>360</y>
+        <width>30</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: transparent;
+border-bottom-right-radius:27px;
+border-bottom:5px solid rgb(255,150,150);
+border-right:5px solid rgb(255,150,150);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="Sensor4Line1">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>360</y>
+        <width>20</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: transparent;
+border-bottom-right-radius:18px;
+border-bottom:5px solid rgb(255,150,150);
+border-right:5px solid rgb(255,150,150);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="Sensor2Line1">
+      <property name="geometry">
+       <rect>
+        <x>880</x>
+        <y>230</y>
+        <width>10</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: rgb(255,150,150);
+border-radius: 5px;</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="Sensor3line1">
+      <property name="geometry">
+       <rect>
+        <x>880</x>
+        <y>280</y>
+        <width>10</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: rgb(255,150,150);
+border-radius: 5px;</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="Sensor2Line2">
+      <property name="geometry">
+       <rect>
+        <x>900</x>
+        <y>222</y>
+        <width>10</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:  rgb(255,150,150);
+border-radius: 5px;</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="Sensor3Line2">
+      <property name="geometry">
+       <rect>
+        <x>900</x>
+        <y>280</y>
+        <width>10</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: rgb(255,150,150);
+border-radius: 5px;</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="Sensor2Line3">
+      <property name="geometry">
+       <rect>
+        <x>920</x>
+        <y>214</y>
+        <width>10</width>
+        <height>56</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: rgb(255,150,150);
+border-radius: 5px;</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="Sensor3Line3">
+      <property name="geometry">
+       <rect>
+        <x>920</x>
+        <y>280</y>
+        <width>10</width>
+        <height>56</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:rgb(255,150,150);
+border-radius: 5px;</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="Sensor2Line4">
+      <property name="geometry">
+       <rect>
+        <x>940</x>
+        <y>204</y>
+        <width>10</width>
+        <height>64</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:rgb(255,215,179);
+border-radius: 5px;</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="Sensor2Line5">
+      <property name="geometry">
+       <rect>
+        <x>960</x>
+        <y>198</y>
+        <width>10</width>
+        <height>72</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: rgb(255,215,179);
+border-radius: 5px;</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="Sensor2Line6">
+      <property name="geometry">
+       <rect>
+        <x>980</x>
+        <y>190</y>
+        <width>10</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:  rgb(255,215,179);
+border-radius: 5px;</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="Sensor3Line7">
+      <property name="geometry">
+       <rect>
+        <x>1000</x>
+        <y>180</y>
+        <width>10</width>
+        <height>88</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: rgb(255,255,179);
+border-radius: 5px;</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="Sensor2Line8">
+      <property name="geometry">
+       <rect>
+        <x>1020</x>
+        <y>172</y>
+        <width>10</width>
+        <height>96</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:  rgb(255,255,179);
+border-radius: 5px;</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="Sensor2Line9">
+      <property name="geometry">
+       <rect>
+        <x>1040</x>
+        <y>164</y>
+        <width>10</width>
+        <height>104</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:  rgb(255,255,179);
+border-radius: 5px;</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="Sensor3Line4">
+      <property name="geometry">
+       <rect>
+        <x>940</x>
+        <y>280</y>
+        <width>10</width>
+        <height>64</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: rgb(255,215,179);
+border-radius: 5px;</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="Sensor3Line5">
+      <property name="geometry">
+       <rect>
+        <x>960</x>
+        <y>280</y>
+        <width>10</width>
+        <height>72</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: rgb(255,215,179);
+border-radius: 5px;</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="Sensor3Line6">
+      <property name="geometry">
+       <rect>
+        <x>980</x>
+        <y>280</y>
+        <width>10</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: rgb(255,215,179);
+border-radius: 5px;</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="Sensor2Line7">
+      <property name="geometry">
+       <rect>
+        <x>1000</x>
+        <y>280</y>
+        <width>10</width>
+        <height>88</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: rgb(255,255,179);
+border-radius: 5px;</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="Sensor3Line8">
+      <property name="geometry">
+       <rect>
+        <x>1020</x>
+        <y>280</y>
+        <width>10</width>
+        <height>96</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:  rgb(255,255,179);
+border-radius: 5px;</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="Sensor3Line9">
+      <property name="geometry">
+       <rect>
+        <x>1040</x>
+        <y>280</y>
+        <width>10</width>
+        <height>104</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background :rgb(255,255,179);
+border-radius: 5px;</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <zorder>SoundButtonParking</zorder>
+     <zorder>BusIcon</zorder>
+     <zorder>Sensor1Line6</zorder>
+     <zorder>Sensor1Line5</zorder>
+     <zorder>Sensor1Line4</zorder>
+     <zorder>Sensor1Line3</zorder>
+     <zorder>Sensor1Line2</zorder>
+     <zorder>Sensor1Line1</zorder>
+     <zorder>Sensor4Line6</zorder>
+     <zorder>Sensor4Line5</zorder>
+     <zorder>Sensor4Line4</zorder>
+     <zorder>Sensor4Line3</zorder>
+     <zorder>Sensor4Line2</zorder>
+     <zorder>Sensor4Line1</zorder>
+     <zorder>Sensor2Line1</zorder>
+     <zorder>Sensor3line1</zorder>
+     <zorder>Sensor2Line2</zorder>
+     <zorder>Sensor3Line2</zorder>
+     <zorder>Sensor2Line3</zorder>
+     <zorder>Sensor3Line3</zorder>
+     <zorder>Sensor2Line5</zorder>
+     <zorder>Sensor2Line6</zorder>
+     <zorder>Sensor3Line7</zorder>
+     <zorder>Sensor2Line8</zorder>
+     <zorder>Sensor2Line9</zorder>
+     <zorder>Sensor3Line4</zorder>
+     <zorder>Sensor3Line5</zorder>
+     <zorder>Sensor3Line6</zorder>
+     <zorder>Sensor2Line7</zorder>
+     <zorder>Sensor3Line8</zorder>
+     <zorder>Sensor3Line9</zorder>
+     <zorder>Sensor2Line4</zorder>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="source.qrc"/>
+  <include location="D:/Rashail 1/UI/Old Ui/source.qrc"/>
+ </resources>
+ <connections/>
+</ui>
